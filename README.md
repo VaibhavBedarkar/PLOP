@@ -8,6 +8,6 @@ Currently We are not accepting contributions since it is closed group project.
 
 ## Authors
 
-* **Vaibhav Bedarkar** - *Initial work* - [PurpleBooth](https://github.com/VaibhavBedarkar)
+* **Vaibhav Bedarkar** - *Initial work* - [Vaibhav Bedarkar](https://github.com/VaibhavBedarkar)
 
 
