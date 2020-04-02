@@ -1,6 +1,13 @@
+// Initialize Express
+
 const express = require('express');
+
+
+// Initialize MySql
+
 const mysql = require('mysql');
 
+// Database Connectivity details
 
 const db = mysql.createConnection({
     host  : 'localhost',
@@ -10,11 +17,12 @@ const db = mysql.createConnection({
 });
 
 
+// Database Connectivity Connection
 db.connect((err)=>{
     if(err){
         throw err;
     }
-    console.log("Connected...");
+    console.log("Connected to Database...");
 });
 
 
