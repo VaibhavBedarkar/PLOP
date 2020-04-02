@@ -1,0 +1,26 @@
+{
+  "name": "miniproject",
+  "version": "1.0.0",
+  "description": "This is an Online Learning platform for students and teachers of PVGCOEN to Learn online. It is a social initiative to tackle the impact of COVID-19. And help students in learning Online",
+  "main": "app.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VaibhavBedarkar/PLOP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VaibhavBedarkar/PLOP/issues"
+  },
+  "homepage": "https://github.com/VaibhavBedarkar/PLOP#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
