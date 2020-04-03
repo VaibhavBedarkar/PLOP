@@ -106,9 +106,13 @@ margin-right: 20px;
     text-align: left;
     color: rgb(18, 17, 119);
     font-size: medium;
-    font-style:bolder;
+    font-weight: bold
+    ;}
+.inim{
+    width: 250px;
+    height: 250px;
+    align-content: center;
 }
-
 
 .he{
    padding-top: 10px;
@@ -149,7 +153,6 @@ margin-right: 20px;
         text-align:left;
     }
 }
-
 
 .banner_content {
     position: relative;
