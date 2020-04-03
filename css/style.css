@@ -15,7 +15,7 @@ html {
     border-radius:50px 50px 8px 8px;
     color: white;
     height:40px;
-    width: 300px;
+    width: auto;
     text-align: center;
     }
 .pla_img{
@@ -80,7 +80,25 @@ h6 {
     height: 50px;
 
 }
+.option{
+    border-radius: 50px 50px 50px 50px;
+    background: linear-gradient(95.76deg, #1A237E 56.77%, #E91E63 100%);
+    color: white;
+    height:40px;
+    width: 200px;
+    text-align: center;
+}
 
+
+
+.panel-heading{
+    text-align: center;
+    font-weight: bold;
+}
+.ct{
+    font-size: medium;
+    margin-top: 10px;
+}
 #myNavbar{
 margin-right: 20px;
 }
