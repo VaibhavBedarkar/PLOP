@@ -20,9 +20,10 @@ const db = mysql.createConnection({
 // Database Connectivity Connection
 db.connect((err)=>{
     if(err){
-        throw err;
+        console.log("Error Connecting to Database...");
     }
-    console.log("Connected to Database...");
+    else{
+    console.log("Connected to Database...");}
 });
 
 
