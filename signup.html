@@ -14,16 +14,12 @@
             <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="navbar  navbar-fixed-top">
-            <div class="container">
+        <br>
+        <div class="navbar navbar-fixed-top " style="background-color:white ">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>                        
-                    </button>
-                    
-                    <a class="navbar-brand" href="index.html"><img src="collegeheader.jpg" width="400" height="40"></a>
+                    <a class="navbar-brand" href="index.html"><img class="collegelogo"src="collegeheader.jpg" width="300" height="30"></a>
+                    <button type="button" style="color:#1A237E ; border-color: #1A237E ;height:fit-content; "class="navbar-toggle glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#myNavbar">                    
+                    </button> 
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
@@ -35,11 +31,9 @@
                     </ul>
                 </div>
             </div>
-            </div>
-            <br><br>
-            
-        <div class="container-fluid decor_bg" id="content">
-            <div class="row">
+             <!---------------------------------Body Goes here------------------------>
+             
+            <div class="alert alert-warning" ><br><br>
                 <div class="container">
                     <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
                         <div class="syllabus">
@@ -48,7 +42,8 @@
                              <br>
                         
                         <form  action="signup.js" method="POST">
-                            <div class="form-group">
+
+                            <div class="form-group">Name:
                                 <input class="form-control" placeholder="Name" name="name"  required>
                             </div>
 
@@ -59,27 +54,28 @@
                                     <option value="be">B.E.</option>                                
                                   </select>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group">Email:
                                 <input type="email" class="form-control"  placeholder="Email"  name="e-mail" required>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group">Password:
                                 <input type="password" class="form-control" placeholder="Password" name="password" required>
                             </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Password" name="Re-type password" required>
+                            <div class="form-group">Mobile:
+                                <input class="form-control" type="number" id="phone" placeholder="Mobile No." name="mobile"maxlength="10" required>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control"  placeholder="Contact" maxlength="10" size="10" name="contact" required>
+                            <div class="form-group">Date of Birth:
+                                <input class="form-control" type="date" id="date" placeholder="Date of Birth" name="dob" required>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group">PRN No:
                                 <input type="text" class="form-control"  placeholder="PRN no" maxlength="9" size="9" name="prn" >
                             </div>
-                            <div class="form-group">
-                                <input  type="text" class="form-control"  placeholder="City" name="city" required>
-                            </div>
-                            <div class="form-group">
+                            <div class="form-group">Address:
                                 <input  type="text" class="form-control"  placeholder="Address" name="address" required>
                             </div>
+                            <div class="form-group">State:
+                                <input  type="text" class="form-control"  placeholder="State" name="state" required>
+                            </div>
+                            
                             <br>
                            <center><button type="submit" name="submit" class="btn">Submit</button></center> 
                         </form>
@@ -89,11 +85,15 @@
         </div>
         
         </section>
+        <br>
         </div>
+       
+            </div>
+            
         <div class="footer">
             <footer>        
                     <center>
-                        <p class="ct">Copyright &copy; Nikita , Vaibhav and Sakshi. All Rights Reserved</p>	
+                        <p class="ct">Copyright &copy; Vaibhav ,Nikita and Sakshi. All Rights Reserved</p>	
                     </center>
             </footer>
         </div>

@@ -103,11 +103,10 @@ h6 {
 margin-right: 20px;
 }
 .obj{
-    text-align: justify;
-    text-decoration: wavy;
-    color: black;
+    text-align: left;
+    color: rgb(18, 17, 119);
     font-size: medium;
-    font-style: normal;
+    font-style:bolder;
 }
 
 
