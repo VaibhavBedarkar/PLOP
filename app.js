@@ -1,39 +1,27 @@
-// Initialize Express
+var express=require("express");
+var bodyParser=require('body-parser');
+var connection = require('./connection');
+var app = express();
 
-const express = require('express');
+var registerController=require('./register');
+var authenticateController=require('./login');
 
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// Initialize MySql
+ app.get('/', function (req, res) {  
+   res.sendFile( __dirname + "/" + "login.html" ); 
 
-const mysql = require('mysql');
+})
+app.get('/', function (req, res) {  
+   res.sendFile( __dirname + "/" + "signup.html" );  
 
-// Database Connectivity details
+}) 
 
-const db = mysql.createConnection({
-    host  : 'localhost',
-    user : 'root',
-    password : '',
-    database : 'studentdb'
-});
+app.post('/api/register',registerController.register);
+app.post('/api/authenticate',authenticateController.authenticate);
 
-
-// Database Connectivity Connection
-db.connect((err)=>{
-    if(err){
-        console.log("Error Connecting to Database...");
-    }
-    else{
-    console.log("Connected to Database...");}
-});
-
-
-
-
-
-
-const app = express();
-
-
-app.listen('3000',()=>{
-    console.log("Server Started on port 3000");
-});
+app.post('/register', registerController.register);
+app.post('/login', authenticateController.authenticate);
+app.listen(8012);
