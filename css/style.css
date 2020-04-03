@@ -69,12 +69,18 @@ h6 {
     font-weight:normal;
 }
 
-footer {
-    padding: 10px 0;
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
     background-color:#1A237E;
     color:white;
     bottom: 0;
     width: 100%;
+
 }
 
 #myNavbar{
