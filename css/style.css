@@ -15,7 +15,7 @@ html {
     border-radius:50px 50px 8px 8px;
     color: white;
     height:40px;
-    width: auto;
+    width: 300px;
     text-align: center;
     }
 .pla_img{
@@ -84,10 +84,17 @@ h6 {
 #myNavbar{
 margin-right: 20px;
 }
+.obj{
+    text-align: justify;
+    text-decoration: wavy;
+    color: black;
+    font-size: medium;
+    font-style: normal;
+}
 
 
 .he{
-   padding-top: 1%;
+   padding-top: 10px;
 }
 .btn
 {
