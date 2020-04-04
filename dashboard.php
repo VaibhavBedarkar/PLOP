@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,11 +31,20 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="dashboard.html"><img class="collegelogo"src="collegeheader.jpg" width="300" height="30"></a>
             </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><h1>Hi, </h1></li>
+                  <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+              </ul>
+          </div>
         </div>
            <!---------------------------------Body Goes here------------------------>
            <br><br><br>
            <section class="banner_content">
-            <center><div class="button_submit"><h4 class="he">Welcome to PVG's Online Learning Platform</h4></div></center><BR><BR>
+            <center><div class="button_submit"><h4 class="he">Hi, <b> <?php
+                    $tname=$_SESSION["studinfo"];
+                    echo"$tname";
+                    ?></b> Enjoy Learnin!! </h4></div></center><br><br>
              <div class="container">  
                <div class="row">
                   <div class="col-sm-4">
