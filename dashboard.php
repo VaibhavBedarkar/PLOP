@@ -33,7 +33,10 @@ session_start();
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right">
-                <li><h1>Hi, </h1></li>
+                <li><div class="option"><h4 class="he">Hi, <b> <?php
+                    $tname=$_SESSION["studinfo"];
+                    echo"$tname";
+                    ?></b></h4></div></li>
                   <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
               </ul>
           </div>
@@ -41,10 +44,7 @@ session_start();
            <!---------------------------------Body Goes here------------------------>
            <br><br><br>
            <section class="banner_content">
-            <center><div class="button_submit"><h4 class="he">Hi, <b> <?php
-                    $tname=$_SESSION["studinfo"];
-                    echo"$tname";
-                    ?></b> Enjoy Learnin!! </h4></div></center><br><br>
+            <center><div class="button_submit"><h4 class="he">Welcome to the Dashboard </h4></div></center><br><br>
              <div class="container">  
                <div class="row">
                   <div class="col-sm-4">

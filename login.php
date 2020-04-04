@@ -1,9 +1,9 @@
 <?php
 session_start();
 $dbhost="localhost";
-$dbuser="id13071373_pvgcompte";
-$dbpass="Vaibhav@26598";
-$dbname="id13071373_pvgsupport";
+$dbuser="root";
+$dbpass="";
+$dbname="studentdb";
 $conn= new mysqli($dbhost,$dbuser,$dbpass,$dbname);
 $sqry2="SELECT name,email,password FROM student";
 $result=$conn->query($sqry2);
